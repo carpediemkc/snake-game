@@ -1,0 +1,169 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Microsoft YaHei', sans-serif;
+    background-color: #f5f5f5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    color: #333;
+}
+
+.game-container {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+    max-width: 500px;
+    width: 100%;
+}
+
+h1 {
+    color: #4CAF50;
+    margin-bottom: 20px;
+}
+
+.game-info {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.level-info {
+    color: #2196F3;
+}
+
+#game-canvas {
+    background-color: #e8f5e9;
+    border: 2px solid #4CAF50;
+    border-radius: 5px;
+    margin-bottom: 15px;
+}
+
+.controls {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #388E3C;
+}
+
+#pause-btn {
+    background-color: #FFC107;
+}
+
+#pause-btn:hover {
+    background-color: #FFA000;
+}
+
+#restart-btn {
+    background-color: #F44336;
+}
+
+#restart-btn:hover {
+    background-color: #D32F2F;
+}
+
+.level-selection {
+    background-color: #e3f2fd;
+    border-radius: 5px;
+    padding: 15px;
+    margin-bottom: 15px;
+}
+
+.level-selection h2 {
+    color: #2196F3;
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.levels-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+.level-btn {
+    background-color: #2196F3;
+    min-width: 80px;
+}
+
+.level-btn:hover {
+    background-color: #1976D2;
+}
+
+.level-btn.locked {
+    background-color: #9E9E9E;
+    cursor: not-allowed;
+}
+
+#reset-levels-btn {
+    background-color: #FF9800;
+    margin-top: 10px;
+}
+
+#reset-levels-btn:hover {
+    background-color: #F57C00;
+}
+
+.instructions {
+    background-color: #f1f8e9;
+    border-radius: 5px;
+    padding: 15px;
+    text-align: left;
+}
+
+.instructions h2 {
+    color: #4CAF50;
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.instructions p {
+    margin-bottom: 8px;
+    line-height: 1.4;
+}
+
+@media (max-width: 500px) {
+    .game-container {
+        padding: 15px;
+    }
+    
+    #game-canvas {
+        width: 100%;
+        height: auto;
+    }
+    
+    .controls {
+        flex-direction: column;
+        gap: 5px;
+    }
+    
+    button {
+        width: 100%;
+    }
+}

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>贪吃蛇游戏</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="game-container">
+        <h1>贪吃蛇游戏</h1>
+        <div class="game-info">
+            <div class="score">分数: <span id="score">0</span></div>
+            <div class="high-score">最高分: <span id="high-score">0</span></div>
+            <div class="level-info">当前关卡: <span id="current-level">第1关</span></div>
+        </div>
+        <canvas id="game-canvas" width="400" height="400"></canvas>
+        <div class="controls">
+            <button id="start-btn">开始游戏</button>
+            <button id="pause-btn">暂停</button>
+            <button id="restart-btn">重新开始</button>
+        </div>
+        <div class="level-selection">
+            <h2>关卡选择</h2>
+            <div id="levels-container" class="levels-container">
+                <!-- 关卡按钮将通过JavaScript动态生成 -->
+            </div>
+            <button id="reset-levels-btn">重置所有关卡</button>
+        </div>
+        <div class="instructions">
+            <h2>游戏说明</h2>
+            <p>使用键盘方向键 ↑ ↓ ← → 控制蛇的移动方向</p>
+            <p>吃到食物可以增加分数和蛇的长度</p>
+            <p>撞到墙壁、障碍物或自己的身体游戏结束</p>
+            <p>达到目标分数即可进入下一关</p>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
